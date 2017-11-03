@@ -82,5 +82,9 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(DEVICE_PATH)/vendor_prop.mk
 
+# Verity
+PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
+$(call inherit-product, build/target/product/verity.mk)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
