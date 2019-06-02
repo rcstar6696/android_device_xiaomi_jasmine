@@ -38,6 +38,9 @@ TARGET_KERNEL_CONFIG := wayne_defconfig
 # Assert
 TARGET_OTA_ASSERT_DEVICE := jasmine_sprout
 
+# Vendor Security patch level
+VENDOR_SECURITY_PATCH := 2019-12-05
+
 # Display
 TARGET_SCREEN_DENSITY := 480
 
