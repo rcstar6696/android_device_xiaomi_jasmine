@@ -35,5 +35,8 @@ TARGET_OTA_ASSERT_DEVICE := jasmine_sprout
 # Display
 TARGET_SCREEN_DENSITY := 480
 
+# Recovery
+TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/twrp/ramdisk-recovery.cpio
+
 # Inherit from proprietary files
 include vendor/xiaomi/wayne-common/BoardConfigVendor.mk
