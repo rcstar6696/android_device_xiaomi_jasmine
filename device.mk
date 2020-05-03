@@ -19,6 +19,9 @@ DEVICE_PATH := device/xiaomi/jasmine_sprout
 # AAPT
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# A/B
+ENABLE_AB := true
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
