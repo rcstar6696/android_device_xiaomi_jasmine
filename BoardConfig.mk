@@ -51,4 +51,4 @@ TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/twrp/ramdisk-recovery.cp
 WLAN_MAC_SYMLINK := true
 
 # Inherit from proprietary files
-include vendor/xiaomi/wayne-common/BoardConfigVendor.mk
+include vendor/xiaomi/wayne/BoardConfigVendor.mk

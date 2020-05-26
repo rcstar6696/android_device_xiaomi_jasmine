@@ -69,7 +69,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
-		
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc
@@ -88,4 +88,4 @@ PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/bootdevice/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/wayne/wayne-vendor.mk)
